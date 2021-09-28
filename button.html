@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0px;
+        }
+        
+        #main ul {
+            list-style-type: none;
+        }
+        
+        #main ul li {
+            background-color: coral;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid red;
+            float: left;
+            font-size: 20px;
+        }
+        
+        #main ul ul {
+            display: none;
+        }
+        
+        #main ul li:hover {
+            background-color: darkgoldenrod;
+        }
+        
+        #main ul li:hover>ul {
+            display: block;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="main">
+
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>cours
+                <ul>
+                    <li>BCA</li>
+                    <li>BBA</li>
+                    <li>B.COM</li>
+                </ul>
+            </li>
+            <li>contec</li>
+        </ul>
+
+    </div>
+</body>
+
+</html>
